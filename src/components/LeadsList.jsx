@@ -16,7 +16,7 @@ const LeadsList = () => {
     <div className="max-w-xl mx-auto bg-white p-6 rounded-xl shadow-md">
       <button
         className="mb-4 text-blue-500 hover:underline"
-        onClick={() => navigate("/")}
+        onClick={() => navigate("/form")}
       >
         ← Back to Form
       </button>

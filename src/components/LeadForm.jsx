@@ -20,6 +20,11 @@ const LeadForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const phoneRegex = /^[0-9]{10}$/;
+  if (!phoneRegex.test(formData.number)) {
+    alert("Please enter a valid 10-digit mobile number.");
+    return;
+  }
     const date = new Date();
     const formattedDate = date.toLocaleString("en-US", {
       weekday: "long",
@@ -40,6 +45,12 @@ const LeadForm = () => {
       className="form-container"
       onSubmit={handleSubmit}
     >
+         <button
+        className="mb-4 text-blue-500 hover:underline"
+        onClick={() => navigate("/")}
+      >
+        ← Back to Home
+      </button>
       <h2 className="form-title">Lead Collection</h2>
       {[
         { label: "Name", name: "name" },

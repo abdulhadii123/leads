@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { addLead } from "../store/leadSlice";
-import "./LeadForm.css"; // import the CSS file
-
+import "./LeadForm.css"; 
 const LeadForm = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -37,7 +36,10 @@ const LeadForm = () => {
   };
 
   return (
-    <form className="form-container" onSubmit={handleSubmit}>
+    <form
+      className="form-container"
+      onSubmit={handleSubmit}
+    >
       <h2 className="form-title">Lead Collection</h2>
       {[
         { label: "Name", name: "name" },
@@ -60,8 +62,18 @@ const LeadForm = () => {
           />
         </div>
       ))}
-      <button type="submit" className="form-button">
+      <button
+        type="submit"
+        className="form-button"
+      >
         Submit
+      </button>
+      <button
+        type="button"
+        className="form-button"
+        onClick={() => navigate("/leads")}
+      >
+        View Saved Leads
       </button>
     </form>
   );

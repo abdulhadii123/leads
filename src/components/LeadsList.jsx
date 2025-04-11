@@ -13,9 +13,9 @@ const LeadsList = () => {
   };
 
   return (
-    <div className="max-w-xl mx-auto bg-white p-6 rounded-xl shadow-md">
+    <div className="form-container">
       <button
-        className="mb-4 text-blue-500 hover:underline"
+        className="button"
         onClick={() => navigate("/form")}
       >
         ← Back to Form

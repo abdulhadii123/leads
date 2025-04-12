@@ -37,7 +37,7 @@ const LeadForm = () => {
     });
     dispatch(addLead({ ...formData, collectedOn: formattedDate }));
     setFormData({ name: "", number: "", plusTwo: "", degree: "", place: "" });
-    navigate("/leads");
+    navigate("/LeadsList");
   };
 
   return (
@@ -82,7 +82,7 @@ const LeadForm = () => {
       <button
         type="button"
         className="form-button"
-        onClick={() => navigate("/leads")}
+        onClick={() => navigate("/LeadsList")}
       >
         View Saved Leads
       </button>

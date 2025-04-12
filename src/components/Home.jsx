@@ -38,10 +38,10 @@ const Home = () => {
         </div>
       </div>
       <div className="button-group">
-        <button onClick={() => navigate("/form")} className="btn blue">
+        <button onClick={() => navigate("/LeadForm")} className="btn blue">
           Fill Form
         </button>
-        <button onClick={() => navigate("/leads")} className="btn green">
+        <button onClick={() => navigate("/LeadsList")} className="btn green">
           View Saved Leads
         </button>
       </div>

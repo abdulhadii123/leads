@@ -16,7 +16,7 @@ const LeadsList = () => {
     <div className="form-container">
       <button
         className="button"
-        onClick={() => navigate("/form")}
+        onClick={() => navigate("/LeadForm")}
       >
         ← Back to Form
       </button>

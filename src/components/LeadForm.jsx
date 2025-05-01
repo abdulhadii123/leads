@@ -45,12 +45,10 @@ const LeadForm = () => {
       className="form-container"
       onSubmit={handleSubmit}
     >
-         <button
-        className="mb-4 text-blue-500 hover:underline"
-        onClick={() => navigate("/")}
-      >
-        ← Back to Home
-      </button>
+        <button type="button" className="mb-4" onClick={() => navigate("/")}>
+  ← Back to Home
+</button>
+
       <h2 className="form-title">Lead Collection</h2>
       {[
         { label: "Name", name: "name" },

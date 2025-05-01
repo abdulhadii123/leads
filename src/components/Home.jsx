@@ -16,7 +16,7 @@ const Home = () => {
       We are the great and the best service provider in the student recruitment industry.
       </p>
       <div className="spotlight">
-        <img src="./guidance-team.jpg" alt="" />
+        <img src="./teams.jpg" alt="" />
       </div>
 
       <h1>Dedicated Workers</h1>
@@ -32,8 +32,13 @@ const Home = () => {
           <p className="worker-role">Lead collector</p>
         </div>
         <div className="worker-card">
-          <img src="./actovia.png" alt="Worker 2" className="worker-image" />
-          <h4 className="worker-name">Actovia</h4>
+          <img src="./sujisha.jpg" alt="Worker 3" className="worker-image" />
+          <h4 className="worker-name">Sujisha</h4>
+          <p className="worker-role">Lead collector</p>
+        </div>
+        <div className="worker-card">
+          <img src="./devapriya.jpg" alt="Worker 4" className="worker-image" />
+          <h4 className="worker-name">Devapriya</h4>
           <p className="worker-role">Lead collector</p>
         </div>
       </div>

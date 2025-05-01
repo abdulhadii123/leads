@@ -9,7 +9,7 @@ const App = () => {
     <div className="min-h-screen bg-gray-100 p-4">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/LeadForm" element={<LeadForm />} />
+       <Route path="/LeadForm" element={<LeadForm />} />
         <Route path="/LeadsList" element={<LeadsList />} />
       </Routes>
     </div>
